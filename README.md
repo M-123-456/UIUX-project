@@ -13,7 +13,7 @@
 
 1. First page
 
-- Hero Headline mit Hintergrundbild (Fullscreen)
+- Headline mit Hintergrundbild (Fullscreen)
 - Menu-Bar (+ Social media icons)
 - responsive
 
