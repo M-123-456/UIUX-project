@@ -5,7 +5,7 @@
 # Tool?
 
 - Bootstrap (installed)
-- npm (initiated)
+- npm (initiated) -- gitignore!
 - scss (installed)
 - GitHub-Pages (set up)
 
