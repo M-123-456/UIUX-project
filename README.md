@@ -4,10 +4,10 @@
 
 # Tool?
 
-- Bootstrap
-- npm
-- scss
-- GitHub-Pages
+- Bootstrap (installed)
+- npm (initiated)
+- scss (installed)
+- GitHub-Pages (set up)
 
 # Feature
 
