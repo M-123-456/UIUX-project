@@ -4,18 +4,19 @@
 
 # Tool?
 
-- Bootstrap (installed)
-- npm (initiated) -- gitignore!
-- scss (installed)
-- GitHub-Pages (set up)
+- Bootstrap
+- npm
+- scss
+- GitHub-Pages
 
 # Feature
 
 1. First page
 
-- Headline mit Hintergrundbild (Fullscreen)
-- Menu-Bar (+ Social media icons)
-- responsive
+- <input type="checkbox"> Headline mit Hintergrundbild (Fullscreen)
+- <input type="checkbox"> Nav-Bar
+- <input type="checkbox"> Social media icons
+- <input type="checkbox" checked> responsive
 
 2. About me
 
