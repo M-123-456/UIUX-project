@@ -50,18 +50,31 @@ section {
   min-height: 100vh;
 }
 
-.fixing-div {
-  height: 100%;
-}
+// * {
+//   border: solid black 1px;
+// }
 
+// go to next page button
 .next {
-  position: absolute;
-  bottom: 0;
-  left: 50;
+  animation: down 2s infinite;
 }
 
-* {
-  border: solid black 1px;
+@keyframes down {
+  0% {
+    transform: translate(0, 0);
+  }
+  40% {
+    transform: translate(0 15px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  70% {
+    transform: translate(0 -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 //typography
@@ -77,6 +90,9 @@ body {
 }
 
 ///headline///
+#headline {
+  padding: 7rem;
+}
 
 // background
 #headline {

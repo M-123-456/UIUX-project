@@ -12213,20 +12213,27 @@ section {
   min-height: 100vh;
 }
 
-.fixing-div {
-  height: 100%;
-}
-
 .next {
-  position: absolute;
-  bottom: 0;
-  left: 50;
+  animation: down 2s infinite;
 }
 
-* {
-  border: solid black 1px;
+@keyframes down {
+  0% {
+    transform: translate(0, 0);
+  }
+  40% {
+    transform: translate(0 15px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  70% {
+    transform: translate(0 -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
-
 body {
   font-family: "PoiretOne", sans-serif;
   font-size: 1.5rem;
@@ -12238,6 +12245,10 @@ body {
 #projects h1,
 #projects .h1 {
   font-family: "GiveYouGlory", fantasy;
+}
+
+#headline {
+  padding: 7rem;
 }
 
 #headline {
