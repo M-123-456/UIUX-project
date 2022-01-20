@@ -1,14 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "GiveYouGlory";
-  src: url(/fonts/Give_You_Glory/GiveYouGlory-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: "PoiretOne";
-  src: url(/fonts/Poiret_One/PoiretOne-Regular.ttf);
-  font-weight: 400;
-}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12213,6 +12203,50 @@ section {
   min-height: 100vh;
 }
 
+@font-face {
+  font-family: "GiveYouGlory";
+  src: url(../fonts/Give_You_Glory/GiveYouGlory-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PoiretOne";
+  src: url(../fonts/Poiret_One/PoiretOne-Regular.ttf);
+  font-weight: 400;
+}
+body {
+  font-family: "PoiretOne", sans-serif;
+  font-size: 1.5rem;
+}
+
+#headline p,
+#contact h1,
+#contact .h1,
+#projects h1,
+#projects .h1 {
+  font-family: "GiveYouGlory", fantasy;
+}
+
+#headline {
+  padding: 7rem;
+}
+
+#contact h1, #contact .h1 {
+  padding-top: 3rem;
+}
+
+footer {
+  height: 5rem;
+}
+
+#headline {
+  background: url("../images/top-background.jpg") no-repeat fixed 100%/cover;
+  background-position: 50% 80%;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .next {
   animation: down 2s infinite;
 }
@@ -12234,32 +12268,6 @@ section {
     transform: translate(0, 0);
   }
 }
-body {
-  font-family: "PoiretOne", sans-serif;
-  font-size: 1.5rem;
-}
-
-#headline p,
-#contact h1,
-#contact .h1,
-#projects h1,
-#projects .h1 {
-  font-family: "GiveYouGlory", fantasy;
-}
-
-#headline {
-  padding: 7rem;
-}
-
-#headline {
-  background: url(/images/top-background.jpg) no-repeat fixed 100%/cover;
-  background-position: 50% 80%;
-}
-
-.navbar {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 .flip-card {
   height: 3rem;
 }
@@ -12338,14 +12346,6 @@ body {
 .card {
   width: 20rem;
   margin: auto;
-}
-
-#contact h1, #contact .h1 {
-  padding-top: 3rem;
-}
-
-footer {
-  height: 5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
