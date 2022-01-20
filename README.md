@@ -28,7 +28,7 @@
 
 4. Kontaktform <input type="checkbox" checked>
 
-5. arrow
+5. arrow <input type="checkbox" checked>
 
 # Schritte
 
