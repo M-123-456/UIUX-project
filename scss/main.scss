@@ -80,12 +80,16 @@ footer {
 
 // background //
 #headline {
-  // background: url("../images/top-background.jpg") no-repeat fixed 100% / cover;
-  background: url("../images/top-background.jpg");
+  // Erste Möglichkeit
+  background: url("../images/top-background.jpg") no-repeat fixed cover;
   background-position: 50% 80%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+
+  // Zweite Möglichkeit
+  // background: url("../images/top-background.jpg");
+  // background-position: 50% 80%;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-attachment: fixed;
 }
 
 .navbar {
