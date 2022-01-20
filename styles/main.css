@@ -12239,7 +12239,7 @@ footer {
 }
 
 #headline {
-  background: url("../images/top-background.jpg");
+  background: url("../images/top-background.jpg") no-repeat fixed 100%/cover;
   background-position: 50% 80%;
 }
 
