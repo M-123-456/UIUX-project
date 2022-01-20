@@ -17,7 +17,7 @@
       <!-- section headline -->
       <section
         id="headline"
-        class="container-fluid d-flex justify-content-center align-items-center justify-content-lg-end align-items-lg-end px-5"
+        class="container-fluid d-flex justify-content-center align-items-center justify-content-lg-end align-items-lg-end px-5 position-relative"
       >
         <!-- navigation -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -59,20 +59,18 @@
         </nav>
 
         <!-- greeting -->
-        <p class="greeting text-violet display-1">
-          Hello,<br />
-          I am Miki<span class="text-decoration-line-through">mouse</span>!
-        </p>
+          <p class="greeting text-violet display-1">
+            Hello,<br />
+            I am Miki<span class="text-decoration-line-through">mouse</span>!
+          </p>
 
-        <!-- back to top button -->
-        <div class="back position-fixed bottom-0 start-50">
-          <a href="#headline"><i class="fas fa-arrow-up text-violet"></i></i></a>
-        </div>
-      </section>
+          <a href="#about_me" class="next"><i class="fas fa-chevron-down text-violet"></i></a>
+
+        </section>
 
       <!-- section about me -->
       <section id="about_me" class="container-fluid bg-yellow">
-        <div class="fixing_div">
+        <div class="fixing_div position-relative">
           <div class="container-flipcards d-flex flex-column gap-3 py-5">
             <div class="flip-card large right-top">
               <div class="flip-card-inner position-relative">
@@ -115,7 +113,10 @@
               </div>
             </div>
           </div>
-        </div>      
+          <a href="#about_me"><i class="fas fa-chevron-down"></i></a> 
+        </div> 
+
+           
        
       </section>
 
