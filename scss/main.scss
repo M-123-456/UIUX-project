@@ -50,15 +50,34 @@ section {
   min-height: 100vh;
 }
 
-.fixing_div {
-  height: 100%;
-}
-
 // * {
 //   border: solid black 1px;
 // }
 
-// typography
+// go to next page button
+.next {
+  animation: down 2s infinite;
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0, 0);
+  }
+  40% {
+    transform: translate(0 15px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  70% {
+    transform: translate(0 -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+//typography
 body {
   font-family: "PoiretOne", sans-serif;
   font-size: 1.5rem;
@@ -71,6 +90,9 @@ body {
 }
 
 ///headline///
+#headline {
+  padding: 7rem;
+}
 
 // background
 #headline {
