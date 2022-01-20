@@ -12239,8 +12239,11 @@ footer {
 }
 
 #headline {
-  background: url("../images/top-background.jpg") no-repeat fixed cover;
+  background: url("../images/top-background.jpg");
   background-position: 50% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .navbar {
@@ -12305,6 +12308,11 @@ footer {
     transform: rotateY(180deg);
   }
 }
+.card {
+  width: 20rem;
+  margin: auto;
+}
+
 @media (min-width: 992px) {
   #about_me .container-flipcards {
     position: relative;
@@ -12342,10 +12350,6 @@ footer {
     top: 30rem;
     right: 3rem;
   }
-}
-.card {
-  width: 20rem;
-  margin: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
