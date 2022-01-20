@@ -1,15 +1,4 @@
-// fonts
-@font-face {
-  font-family: "GiveYouGlory";
-  src: url(/fonts/Give_You_Glory/GiveYouGlory-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "PoiretOne";
-  src: url(/fonts/Poiret_One/PoiretOne-Regular.ttf);
-  font-weight: 400;
-}
+///BOOTSTRAP///
 
 // import the functions & variables
 @import "../node_modules/bootstrap/scss/functions";
@@ -45,16 +34,65 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-// global style
+///CUSTOMIZED STYLES///
+
+// global style //
 section {
   min-height: 100vh;
 }
 
-// * {
-//   border: solid black 1px;
-// }
+// typography //
+@font-face {
+  font-family: "GiveYouGlory";
+  src: url(../fonts/Give_You_Glory/GiveYouGlory-Regular.ttf);
+  font-weight: 400;
+}
 
-// go to next page button
+@font-face {
+  font-family: "PoiretOne";
+  src: url(../fonts/Poiret_One/PoiretOne-Regular.ttf);
+  font-weight: 400;
+}
+
+body {
+  font-family: "PoiretOne", sans-serif;
+  font-size: 1.5rem;
+}
+
+#headline p,
+#contact h1,
+#projects h1 {
+  font-family: "GiveYouGlory", fantasy;
+}
+
+// layout //
+#headline {
+  padding: 7rem;
+}
+
+#contact h1 {
+  padding-top: 3rem;
+}
+
+footer {
+  height: 5rem;
+}
+
+// background //
+#headline {
+  background: url("../images/top-background.jpg") no-repeat fixed 100% / cover;
+  background-position: 50% 80%;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+// footer //
+
+// components //
+
+// scroll button
 .next {
   animation: down 2s infinite;
 }
@@ -77,36 +115,7 @@ section {
   }
 }
 
-//typography
-body {
-  font-family: "PoiretOne", sans-serif;
-  font-size: 1.5rem;
-}
-
-#headline p,
-#contact h1,
-#projects h1 {
-  font-family: "GiveYouGlory", fantasy;
-}
-
-///headline///
-#headline {
-  padding: 7rem;
-}
-
-// background
-#headline {
-  background: url(/images/top-background.jpg) no-repeat fixed 100% / cover;
-  background-position: 50% 80%;
-}
-
-.navbar {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-///About Me///
-
-//flip card
+//flip cards
 .flip-card {
   height: 3rem;
 }
@@ -198,18 +207,7 @@ body {
   }
 }
 
-// projects //
 .card {
   width: 20rem;
   margin: auto;
-}
-
-// contact //
-#contact h1 {
-  padding-top: 3rem;
-}
-
-// footer //
-footer {
-  height: 5rem;
 }
