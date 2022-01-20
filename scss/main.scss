@@ -19,6 +19,7 @@
 // adding custom colors
 $custom-theme-colors: (
   "gray": #837d7b,
+  "light-blue": #cfe1f2,
   "lavender": #d4adcf,
   "violet": #473347,
   "perussian_blue": #00273d,
@@ -27,6 +28,7 @@ $custom-theme-colors: (
   "lavender-blush": #f2e3e5,
   "russian_green": #629460,
   "cerulean_blue": #3454d1,
+  "razzmic_berry": #9b5094,
 );
 
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
@@ -45,7 +47,11 @@ $utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 // global style
 section {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.fixing_div {
+  height: 100%;
 }
 
 // * {
@@ -59,8 +65,8 @@ body {
 }
 
 #headline p,
-#projects p,
-#contact h1 {
+#contact h1,
+#projects h1 {
   font-family: "GiveYouGlory", fantasy;
 }
 
@@ -80,7 +86,7 @@ body {
 
 //flip card
 .flip-card {
-  height: 40px;
+  height: 3rem;
 }
 
 .flip-card-inner {
@@ -89,7 +95,8 @@ body {
   text-align: center;
   perspective: 1000px;
 
-  &:active {
+  &:active,
+  &:hover {
     transform: rotateY(180deg);
     transition: 1s;
     transform-style: preserve-3d;
@@ -169,7 +176,18 @@ body {
   }
 }
 
-// projects
-#projects div {
-  width: 40rem;
+// projects //
+.card {
+  width: 20rem;
+  margin: auto;
+}
+
+// contact //
+#contact h1 {
+  padding-top: 3rem;
+}
+
+// footer //
+footer {
+  height: 5rem;
 }
