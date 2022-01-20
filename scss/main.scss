@@ -1,12 +1,193 @@
+// fonts
+@font-face {
+  font-family: "GiveYouGlory";
+  src: url(/fonts/Give_You_Glory/GiveYouGlory-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PoiretOne";
+  src: url(/fonts/Poiret_One/PoiretOne-Regular.ttf);
+  font-weight: 400;
+}
+
 // import the functions & variables
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/_mixins";
 
-$custom-colors: (
-  "sand": rgb(177, 169, 125),
+// adding custom colors
+$custom-theme-colors: (
+  "gray": #837d7b,
+  "light-blue": #cfe1f2,
+  "lavender": #d4adcf,
+  "violet": #473347,
+  "perussian_blue": #00273d,
+  "yellow": #fcf9d9,
+  "ivory": #e6ecd5,
+  "lavender-blush": #f2e3e5,
+  "russian_green": #629460,
+  "cerulean_blue": #3454d1,
+  "razzmic_berry": #9b5094,
 );
 
-$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop(
+  $utilities-colors,
+  rgba-css-var,
+  "$key",
+  "text"
+);
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// global style
+section {
+  min-height: 100vh;
+}
+
+.fixing_div {
+  height: 100%;
+}
+
+// * {
+//   border: solid black 1px;
+// }
+
+// typography
+body {
+  font-family: "PoiretOne", sans-serif;
+  font-size: 1.5rem;
+}
+
+#headline p,
+#contact h1,
+#projects h1 {
+  font-family: "GiveYouGlory", fantasy;
+}
+
+///headline///
+
+// background
+#headline {
+  background: url(/images/top-background.jpg) no-repeat fixed 100% / cover;
+  background-position: 50% 80%;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+///About Me///
+
+//flip card
+.flip-card {
+  height: 3rem;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  perspective: 1000px;
+
+  &:active,
+  &:hover {
+    transform: rotateY(180deg);
+    transition: 1s;
+    transform-style: preserve-3d;
+  }
+}
+
+// rotate back side
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+// make front and back in one card
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@media (min-width: 992px) {
+  #about_me {
+    .container-flipcards {
+      position: relative;
+
+      .flip-card {
+        position: absolute;
+      }
+
+      .large {
+        width: 40rem;
+        height: 5rem;
+        font-size: 3rem;
+      }
+
+      .medium {
+        width: 30rem;
+        height: 4rem;
+        font-size: 2rem;
+      }
+
+      .small {
+        width: 20rem;
+        height: 2rem;
+      }
+
+      .right-top {
+        top: 5rem;
+        right: 5rem;
+      }
+
+      .left-middle {
+        top: 10rem;
+        left: 5rem;
+      }
+
+      .middle {
+        top: 20rem;
+        left: 20rem;
+      }
+
+      .right-bottom {
+        top: 30rem;
+        right: 3rem;
+      }
+    }
+  }
+}
+
+// projects //
+.card {
+  width: 20rem;
+  margin: auto;
+}
+
+// contact //
+#contact h1 {
+  padding-top: 3rem;
+}
+
+// footer //
+footer {
+  height: 5rem;
+}

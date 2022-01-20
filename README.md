@@ -4,28 +4,29 @@
 
 # Tool?
 
-- Bootstrap (installed)
-- npm (initiated) -- gitignore!
-- scss (installed)
-- GitHub-Pages (set up)
+- Bootstrap
+- npm
+- scss
+- GitHub-Pages
 
 # Feature
 
-1. First page
+1. First page <input type="checkbox" checked>
 
-- Hero Headline mit Hintergrundbild (Fullscreen)
-- Menu-Bar (+ Social media icons)
-- responsive
+- Headline mit Hintergrundbild (Fullscreen) <input type="checkbox" checked>
+- Nav-Bar <input type="checkbox" checked>
+- Social media icons <input type="checkbox" checked>
+- responsive <input type="checkbox" checked>
 
 2. About me
 
 - Text + Bild
 
-3. Projects
+3. Projects <input type="checkbox" checked>
 
-- Cards mit Button (Link zu einzelnen Seiten)
+- Cards mit Button (Link zu einzelnen Seiten) <input type="checkbox" checked>
 
-4. Kontaktform
+4. Kontaktform <input type="checkbox" checked>
 
 # Schritte
 
